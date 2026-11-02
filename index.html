@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Linéa</title>
+<meta name="description" content="Studio Linéa, décoration d’intérieur et inspirations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fond: #ebe7e0;
+    --encre: #26221d;
+    --texte-doux: #6b6358;
+    --trait: #b9ad9b;
+    --chene: #b08d62;
+    --bouton: #f6f3ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fond: #1f1c18;
+      --encre: #efeae1;
+      --texte-doux: #a79d8f;
+      --trait: #5a5247;
+      --chene: #c9a679;
+      --bouton: #2a2621;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: var(--fond); }
+  body {
+    min-height: 100vh;
+    background: var(--fond);
+    color: var(--encre);
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 56px 24px 48px;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { width: 100%; max-width: 420px; text-align: center; }
+
+  /* Photo en arche, comme la niche du miroir de la photo */
+  .arche {
+    width: 176px;
+    aspect-ratio: 4 / 5;
+    margin: 0 auto 28px;
+    border-radius: 999px 999px 4px 4px;
+    overflow: hidden;
+    border: 1px solid var(--trait);
+    padding: 5px;
+  }
+  .arche img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 999px 999px 2px 2px;
+  }
+
+  h1 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 500;
+    font-size: 2.6rem;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+  }
+  .presentation {
+    margin: 10px auto 40px;
+    color: var(--texte-doux);
+    font-size: 0.98rem;
+    line-height: 1.5;
+    max-width: 30ch;
+  }
+
+  .liens { list-style: none; display: grid; gap: 14px; }
+  .liens a {
+    display: block;
+    padding: 17px 20px;
+    background: var(--bouton);
+    color: var(--encre);
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    border: 1px solid var(--trait);
+    border-radius: 3px;
+    transition: border-color .2s ease, background-color .2s ease;
+  }
+  .liens a:hover { border-color: var(--chene); }
+  .liens a:focus-visible { outline: 2px solid var(--chene); outline-offset: 3px; }
+
+  footer {
+    margin-top: 48px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 0.95rem;
+    color: var(--texte-doux);
+  }
+  @media (prefers-reduced-motion: reduce) { .liens a { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="arche">
+    <img src="photo.jpg" alt="Salon haussmannien lumineux avec parquet en chevrons">
+  </div>
+
+  <h1>Studio Linéa</h1>
+  <p class="presentation">Décoration d’intérieur et inspirations pour la maison.</p>
+
+  <ul class="liens">
+    <!-- ============================================================
+         POUR AJOUTER UN LIEN : copie le bloc <li>...</li> ci-dessous,
+         colle-le juste en dessous, puis change l’adresse (href) et le titre.
+         ============================================================ -->
+    <li><a href="https://www.pinterest.com/studiolineadecoration/" target="_blank" rel="noopener">Mon profil Pinterest</a></li>
+
+    <!-- Colle tes nouveaux liens ici -->
+  </ul>
+
+  <footer>Studio Linéa</footer>
+
+</main>
+</body>
+</html>
